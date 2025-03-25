@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+:root{
+  --cor1: hsl(30, 38%, 92%);
+  --cor2: hsl(158, 36%, 37%);
+  --cor3: hsl(158, 42%, 18%);
+  --cor4: hsl(212, 21%, 14%);
+  --cor5: hsl(228, 12%, 48%);
+  --cor6: hsl(30, 38%, 92%);
+  --cor7: hsl(0, 0%, 100%);
+
+  --font1: 'Montserrat';
+  --font2: 'Fraunces';
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+/* Configurações Gerais */
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--cor1);
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+section > div#img{
+  background-image: url('../images/image-product-mobile.jpg');
+  background-position: right bottom;
+  background-size: cover;
+  width: 300px;
+  height: 220px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+section > div#info{
+    margin: 20px;
+}
+
+section > div#info > h1{
+  font-family: var(--font1);
+}
