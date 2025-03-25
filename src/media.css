@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (orientation: landscape) {
+  section{
+    display: flex;
+    width: 500px;
+    height: 400px;
+  }
+
+  section > div#img{
+    width: 150%;
+    height: 100%;
+    background: black url('../images/image-product-desktop.jpg') no-repeat center top / cover;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  
+  section > div#info > *{
+    margin-top: 10px ;
+  }
+
+  section > div#info > div#worth{
+    margin-top: 20px;
+  }
+
+  section > div#info > div#button{
+    margin-top: 20px;
+  }
+}
